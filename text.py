@@ -1,20 +1,13 @@
-n = 2 
-i = 0
-A11=[]
-A12=[[1]]
-A21=[[1,2]]
-A22=[[1,2]]
-B11=[[1,2]]
-B12=[[1,2]]
-B21=[[1,2]]
-B22=[[1,2]]
-#print(A11.append(A12))
-def ab():
-    A=[1,2]
-    B=[2,1]
-    mid(A,B)
-    print(A)
-def mid(X,Y):
-    X[0]=X[0]+Y[0]
-    return X
-ab()
+def find(A,x,y):
+    X,Y=False,False
+    for i in range(len(A)):
+            if A[i]==x:
+                X=i
+            if A[len(A)-i-1]==y:
+                Y = len(A)-i-1
+            if type(X)==int and type(Y)==int:
+                return [X,Y]
+nums=[0,4,3,0]
+nums_=nums[:]
+nums_.sort()
+
